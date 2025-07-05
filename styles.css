@@ -42,26 +42,29 @@ main {
 }
 
 #log {
-    border-radius: 2px;
+    border-radius: 4px;
       box-shadow: #bcb4b4 0px 0px 5px;
 }
 
 .push {
-      background-color: #a8e7b7; /* green */
+      background-color: #e6f4ea; /* green */
+      border-bottom: 4px solid #4caf50; /* darker green */
 }
 
 .pull_request {
-      background-color: #efd585; /* yellow */
+      background-color: #fff9e6; /* yellow */
+      border-bottom: 4px solid #ff9800; /* darker yellow */
 }
 
 .merge {
-      background-color: #e9c3c7; /* red */
+      background-color: #f3e8fd; /* red */
+      border-bottom: 4px solid #e91e63; /* darker red */
 }
 
 .push, .pull_request, .merge {
     padding: 10px;
-    border-bottom: 2px solid grey;
-    border-radius: 2px;
+    
+    border-radius: 4px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
     margin: 10px;
