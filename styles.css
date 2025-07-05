@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #121212;
+}
+
+.topic {    
+    font-size: 36px;
+    font-weight: bold;
+    color: azure;
+}
+
+.link a{
+    text-decoration: none;
+    color: white;
+}
+
+.link a:hover{
+    cursor: pointer;
+    color: aquamarine;
+    font-weight: 700;
+}
+
+main {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+#log {
+    border-radius: 2px;
+      box-shadow: #bcb4b4 0px 0px 5px;
+}
+
+.push {
+      background-color: #a8e7b7; /* green */
+}
+
+.pull_request {
+      background-color: #efd585; /* yellow */
+}
+
+.merge {
+      background-color: #e9c3c7; /* red */
+}
+
+.push, .pull_request, .merge {
+    padding: 10px;
+    border-bottom: 2px solid grey;
+    border-radius: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    margin: 10px;
+    height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+}
+
+.push img, .pull_request img, .merge img {
+    margin: 10px;
+    padding: 5px;
+    border-right: 2px solid white;
+      width: 25px;
+      height: 25px;
+}
+
+.git-events {
+    margin: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.git-events img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.extra {
+    text-align: center;
+    margin: 20px;
+    font-size: 12px;
+    color: grey;
+    margin-left: 10px;
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
