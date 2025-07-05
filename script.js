@@ -15,22 +15,19 @@ function renderEvent(event) {
     eventType = "merge";
   }
 
-  if (!eventType) return null; // Ignore unknown events
+  if (!eventType) return null;
 
   wrapper.classList.add(eventType);
 
-  // Create icon element
   const icon = document.createElement("img");
   icon.className = "event-icon";
   icon.alt = `${eventType} icon`;
   icon.src = `icons/${eventType}.png`;
 
-  // Create message element
   const messageDiv = document.createElement("div");
   messageDiv.className = "event-message";
-  messageDiv.innerHTML = event.message; // ✅ updated to allow <b> tags
+  messageDiv.innerHTML = event.message;
 
-  // Append icon and message to wrapper
   wrapper.appendChild(icon);
   wrapper.appendChild(messageDiv);
 
